@@ -33,16 +33,16 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#FAF6FA] min-h-[calc(100vh-8.5rem)] flex flex-col justify-center items-center py-6 sm:py-8 lg:py-10 px-6 sm:px-12 lg:px-20 xl:px-28">
+    <section className="relative overflow-hidden bg-[#FAF6FA] min-h-[calc(100vh-8.5rem)] flex flex-col justify-center items-center py-6 sm:py-8 lg:py-10 px-3.5 sm:px-8 lg:px-20 xl:px-28">
       {/* Background Glows */}
       <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-[#9A389F]/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-80 h-80 bg-[#652D6C]/10 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="w-full max-w-6xl mx-auto px-2 sm:px-4 lg:px-6 relative z-10 my-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-8 lg:gap-10 xl:gap-14">
+      <div className="w-full max-w-6xl mx-auto px-1 sm:px-4 lg:px-6 relative z-10 my-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 items-center gap-6 sm:gap-8 lg:gap-10 xl:gap-14">
           
           {/* Left Column: Headlines & Discount Offer */}
-          <div className="space-y-4 sm:space-y-5 lg:col-span-7 order-2 lg:order-1">
+          <div className="space-y-3.5 sm:space-y-5 lg:col-span-7 order-2 lg:order-1">
             
             {/* Brand Eyebrow: MEDCY IVF (Poppins SemiBold) */}
             {t.hero.brandTag && (
@@ -54,10 +54,10 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
 
             {/* Main Headline */}
             <h1 className="tracking-tight text-[#2A102D] leading-[1.15]">
-              <span className="block font-poppins font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#2A102D]">
+              <span className="block font-poppins font-extrabold text-xl sm:text-3xl lg:text-4xl text-[#2A102D]">
                 {t.hero.headlinePart1}
               </span>
-              <span className="block font-poppins font-extrabold italic text-2xl sm:text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#652D6C] via-[#9A389F] to-[#7E3282] mt-1 sm:mt-1.5">
+              <span className="block font-poppins font-extrabold italic text-xl sm:text-3xl lg:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#652D6C] via-[#9A389F] to-[#7E3282] mt-1 sm:mt-1.5">
                 {t.hero.headlineHighlight}
               </span>
             </h1>
@@ -126,11 +126,11 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
 
           {/* Right Column: Registration Form */}
           <div className="lg:col-span-5 order-1 lg:order-2">
-            <div className="bg-white relative shadow-xl border border-[#652D6C]/20 px-6 pt-7 pb-8 sm:px-7 sm:pt-8 sm:pb-9 lg:pt-9 lg:pb-10 rounded-2xl">
+            <div className="bg-white relative shadow-xl border border-[#652D6C]/20 px-4 py-5 sm:px-7 sm:pt-8 sm:pb-9 lg:pt-9 lg:pb-10 rounded-2xl">
               
               {/* Form Header */}
-              <div className="text-center mb-4 sm:mb-5">
-                <h2 className="text-xl sm:text-2xl font-extrabold text-[#2A102D] tracking-tight">
+              <div className="text-center mb-3 sm:mb-5">
+                <h2 className="text-lg sm:text-2xl font-extrabold text-[#2A102D] tracking-tight">
                   {t.hero.formTitle}
                 </h2>
                 <p className="text-xs sm:text-sm text-[#56335B] mt-0.5 font-medium">

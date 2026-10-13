@@ -7,31 +7,31 @@ interface FooterProps {
 }
 
 export const Footer: React.FC<FooterProps> = ({ t }) => {
-  const mapDirectionsUrl = "https://www.google.com/maps/dir/?api=1&destination=Medcy+IVF+Plot+9A+Health+City+Arilova+Visakhapatnam+530040&dir_action=navigate";
+  const mapDirectionsUrl = "https://www.google.com/maps/dir/?api=1&destination=Vizag+IVF+Centre+Gajuwaka+Visakhapatnam&dir_action=navigate";
 
   return (
-    <footer className="bg-gradient-to-b from-[#4D1F53] to-[#2A102D] text-white pt-16 pb-12 relative overflow-hidden">
+    <footer className="bg-gradient-to-b from-[#4D1F53] to-[#2A102D] text-white pt-12 sm:pt-16 pb-20 lg:pb-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-12 border-b border-white/15">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 pb-10 sm:pb-12 border-b border-white/15">
           
           {/* Brand & About */}
           <div className="lg:col-span-4 space-y-4">
             {/* Brand Logos with white background */}
-            <div className="inline-flex items-center gap-3 bg-white px-3.5 py-2 rounded-xl">
+            <div className="inline-flex items-center gap-2.5 sm:gap-3 bg-white px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-xl">
               <a href="#" className="focus:outline-none hover:opacity-95 transition-opacity">
                 <img 
                   src="/medcy-logo.png" 
                   alt="Medcy IVF Logo" 
-                  className="h-8 sm:h-10 w-auto object-contain" 
+                  className="h-7 sm:h-10 w-auto object-contain" 
                 />
               </a>
-              <span className="h-6 w-px bg-gray-300" aria-hidden="true"></span>
+              <span className="h-5 sm:h-6 w-px bg-gray-300" aria-hidden="true"></span>
               <a href="#" className="focus:outline-none hover:opacity-95 transition-opacity">
                 <img 
                   src="/vizag-ivf-logo.png" 
                   alt="Vizag IVF Centre Gajuwaka Logo" 
-                  className="h-8 sm:h-10 w-auto object-contain" 
+                  className="h-8 sm:h-11 w-auto object-contain" 
                 />
               </a>
             </div>
@@ -63,7 +63,7 @@ export const Footer: React.FC<FooterProps> = ({ t }) => {
 
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#9A389F] shrink-0" />
-                <a href="tel:+919502534222" className="hover:text-white font-bold transition-colors">
+                <a href="tel:+918096008999" className="hover:text-white font-bold transition-colors">
                   {t.footer.phoneValue}
                 </a>
               </li>
@@ -75,10 +75,10 @@ export const Footer: React.FC<FooterProps> = ({ t }) => {
             </ul>
           </div>
 
-          {/* Interactive Vizag Health City Map (Clicking ANY side opens Google Maps) */}
+          {/* Interactive Vizag IVF Centre Gajuwaka Map (Clicking ANY side opens Google Maps) */}
           <div className="lg:col-span-4 space-y-3">
             <h4 className="text-base font-extrabold text-white border-l-4 border-[#9A389F] pl-3">
-              Location Map (Arilova Health City)
+              Location Map (Gajuwaka)
             </h4>
 
             <a
@@ -86,12 +86,12 @@ export const Footer: React.FC<FooterProps> = ({ t }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="block relative w-full h-44 rounded-2xl overflow-hidden border-2 border-white/20 shadow-xl group cursor-pointer"
-              title="Click anywhere on map to open Google Maps navigation to Medcy IVF"
+              title="Click anywhere on map to open Google Maps navigation to Vizag IVF Centre Gajuwaka"
             >
               {/* Map Iframe */}
               <iframe
-                title="Medcy IVF Visakhapatnam Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.0768912845!2d83.3325!3d17.7650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395b28d0000001%3A0x6b4a3a60e0a5c4d2!2sHealth%20City%2C%20Arilova%2C%20Visakhapatnam!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                title="Vizag IVF Centre Gajuwaka Location"
+                src="https://maps.google.com/maps?q=Vizag+IVF+Centre,+Gajuwaka,+Visakhapatnam&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
