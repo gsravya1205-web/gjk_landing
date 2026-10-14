@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Ribbon, Calendar } from 'lucide-react';
+import { GraduationCap, Ribbon } from 'lucide-react';
 import { Translation } from '../data/translations';
 
 interface DoctorsSectionProps {
@@ -92,27 +92,13 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ t, onDoctorClick
 
               </div>
 
-              {/* Bottom Achievement Ribbon Badge & Action Button */}
-              <div className="mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-[#652D6C]/10 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
-                {doctor.achievementBadge ? (
-                  <div className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-extrabold text-[#652D6C] text-center sm:text-left">
-                    <Ribbon className="w-4 h-4 text-[#8E3294] shrink-0" />
-                    <span>{doctor.achievementBadge}</span>
-                  </div>
-                ) : (
-                  <div></div>
-                )}
-
-                {onDoctorClick && (
-                  <button
-                    onClick={() => onDoctorClick(doctor.name)}
-                    className="w-full sm:w-auto sm:ml-auto bg-gradient-to-r from-[#7E2A85] to-[#602068] hover:from-[#6E2274] hover:to-[#501856] text-white px-5 sm:px-6 py-2.5 rounded-xl sm:rounded-2xl text-xs sm:text-sm font-bold flex items-center justify-center gap-2 shadow-md shadow-[#652D6C]/20 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
-                  >
-                    <span>{t.nav.bookAppointment}</span>
-                    <Calendar className="w-4 h-4 text-white" />
-                  </button>
-                )}
-              </div>
+              {/* Bottom Achievement Ribbon Badge */}
+              {doctor.achievementBadge && (
+                <div className="mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-[#652D6C]/10 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-extrabold text-[#652D6C]">
+                  <Ribbon className="w-4 h-4 text-[#8E3294] shrink-0" />
+                  <span>{doctor.achievementBadge}</span>
+                </div>
+              )}
 
             </div>
           ))}

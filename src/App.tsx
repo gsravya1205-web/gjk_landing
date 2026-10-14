@@ -28,10 +28,10 @@ export function App() {
     setIsRegistrationModalOpen(true);
   };
 
-  const handleFormSubmit = (data: FormSubmissionData) => {
+  const handleFormSubmit = async (data: FormSubmissionData) => {
     setBookingData(data);
     setIsModalOpen(true);
-    sendToGoogleSheet(data);
+    await sendToGoogleSheet(data);
   };
 
   return (

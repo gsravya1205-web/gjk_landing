@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, MapPin, CheckCircle2, User, Phone, ChevronRight, Award, Heart, Star, ShieldCheck, Tag } from 'lucide-react';
+import { Calendar, MapPin, User, Phone, ChevronRight, Award, Heart, Star, ShieldCheck, Tag } from 'lucide-react';
 import { Translation } from '../data/translations';
 
 interface HeroProps {
@@ -73,19 +73,6 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
             <p className="text-sm sm:text-base lg:text-base text-[#56335B] leading-relaxed max-w-2xl font-medium">
               {t.hero.subtext}
             </p>
-
-            {/* 5 Key Badges / Trust Highlights */}
-            <div className="flex flex-wrap items-center gap-2 pt-1 pb-1">
-              {t.hero.keyPoints.map((point, idx) => (
-                <div 
-                  key={idx}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/95 border border-[#652D6C]/15 shadow-sm text-xs sm:text-sm font-bold text-[#3D1443]"
-                >
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>{point}</span>
-                </div>
-              ))}
-            </div>
 
 
             {/* Special Discount Offer Card comparing 1.9L vs 1.8L */}
