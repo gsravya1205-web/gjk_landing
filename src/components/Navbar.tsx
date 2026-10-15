@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Calendar, Globe, ChevronRight, MapPin } from 'lucide-react';
+import { Phone, Calendar } from 'lucide-react';
 import { Language, Translation } from '../data/translations';
 
 interface NavbarProps {
@@ -7,10 +7,10 @@ interface NavbarProps {
   setLang: (lang: Language) => void;
   t: Translation;
   onBookClick: () => void;
-  onOpenRegistrationModal: () => void;
+  onOpenRegistrationModal?: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onBookClick, onOpenRegistrationModal }) => {
+export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onBookClick }) => {
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-white/95 border-b border-[#652D6C]/15 shadow-sm transition-all duration-300">
       {/* Main Navbar */}
@@ -81,41 +81,7 @@ export const Navbar: React.FC<NavbarProps> = ({ lang, setLang, t, onBookClick, o
           </button>
         </div>
       </div>
-
-      {/* Top Banner Bar Below Main Navbar - Static (Non-scrolling) */}
-      <div className="bg-gradient-to-r from-[#45144A] via-[#652D6C] to-[#8F2D95] text-white border-t border-b border-white/10 shadow-lg py-2.5 sm:py-3 px-3 sm:px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4">
-          
-          {/* Static Banner Content */}
-          <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 sm:gap-3 text-center md:text-left">
-            <span className="text-xs sm:text-sm lg:text-base font-extrabold text-[#FFCC00] tracking-wide uppercase px-2.5 py-0.5 rounded-full bg-white/10 border border-[#FFCC00]/30 shrink-0">
-              {t.nav.freeCampBadge}
-            </span>
-
-            <span className="text-xs sm:text-sm font-bold text-white">
-              {t.nav.topBannerTitle}
-            </span>
-
-            <span className="text-purple-100 font-medium text-[11px] sm:text-xs inline-flex items-center gap-1.5 bg-white/10 px-2.5 py-0.5 rounded-full border border-white/15">
-              <MapPin className="w-3.5 h-3.5 text-pink-300 shrink-0" />
-              <span>{t.nav.campLocation}</span>
-            </span>
-          </div>
-
-          {/* Right Side: Prominent Yellow CTA Button */}
-          <div className="w-full md:w-auto flex justify-center md:justify-end shrink-0 z-10">
-            <button
-              onClick={onOpenRegistrationModal}
-              className="bg-[#FFCC00] hover:bg-[#FFD633] text-[#3D1443] font-extrabold shadow-md hover:shadow-xl transition-all duration-200 flex items-center justify-center gap-1.5 shrink-0 group active:scale-95 border border-yellow-300/50 cursor-pointer w-full md:w-auto text-xs sm:text-sm px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl"
-            >
-              <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#3D1443] shrink-0" />
-              <span className="whitespace-nowrap">{t.nav.topBannerButton}</span>
-              <ChevronRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#3D1443] group-hover:translate-x-1 transition-transform shrink-0" />
-            </button>
-          </div>
-
-        </div>
-      </div>
     </header>
   );
 };
+

@@ -341,14 +341,6 @@ export const translations: Record<Language, Translation> = {
                     rating: 5,
                     treatment: "సంతాన భాగ్యం",
                     review: "వైజాగ్ లో అత్యుత్తమ సంతాన సాఫల్య కేంద్రం. డాక్టర్ శిరీష రాణి గారు మరియు డాక్టర్ సృజన గారు ఎంతో అనుభవజ్ఞులు మరియు పేషెంట్ల పట్ల నిజమైన శ్రద్ధ చూపిస్తారు. కౌన్సెలింగ్ నుండి ప్రక్రియ పూర్తయ్యే వరకు అంతా ఎంతో పద్ధతిగా జరిగింది. వైజాగ్ IVF బృందానికి కృతజ్ఞతలు."
-                },
-                {
-                    name: "పి. లక్ష్మి ప్రసన్న",
-                    location: "అనకాపల్లి, వైజాగ్",
-                    timeAgo: "4 నెలల క్రితం",
-                    rating: 5,
-                    treatment: "PCOD & సంతాన సాఫల్యం",
-                    review: "3 సంవత్సరాలకు పైగా తీవ్రమైన PCOD సమస్యతో బాధపడ్డాను. ఎన్నో చోట్ల తిరిగినా ఫలితం లేకపోవడంతో వైజాగ్ IVF సెంటర్‌ను సంప్రదించాను. డాక్టర్ గారి సరైన వైద్యంతో 4 నెలల్లోనే సహజంగా గర్భం దాల్చాను. డాక్టర్ గారి పాజిటివ్ మాటలు మాకు కొండంత ధైర్యాన్ని ఇచ్చాయి."
                 }
             ]
         },
@@ -618,14 +610,6 @@ export const translations: Record<Language, Translation> = {
                     rating: 5,
                     treatment: "Parenthood Journey",
                     review: "Excellent fertility clinic in Vizag. Dr. Sireesha Rani garu and Dr. Srujana garu are top doctors with genuine concern for patients. Everything from consultation to embryo transfer was handled with extreme care and professionalism. Thank you to the entire Medcy Vizag IVF team."
-                },
-                {
-                    name: "P. Lakshmi Prasanna",
-                    location: "Anakapalle, Vizag",
-                    timeAgo: "4 months ago",
-                    rating: 5,
-                    treatment: "PCOD & Natural Conception",
-                    review: "I was struggling with severe PCOD and irregular cycles for over 3 years. After consulting Dr. Sireesha Rani at Vizag IVF Centre, within 4 months of treatment I conceived naturally. Doctor's positive energy and reassurance gave us immense peace of mind."
                 }
             ]
         },
