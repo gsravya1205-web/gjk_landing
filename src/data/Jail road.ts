@@ -313,42 +313,42 @@ export const translations: Record<Language, Translation> = {
         reviews: {
             badge: "గూగుల్ పేషెంట్ రివ్యూలు",
             title: "గూగుల్‌లో మా పేషెంట్ల నిజమైన అనుభవాలు",
-            subtitle: "8,000+ ఆనందకరమైన కుటుంబాల నమ్మకం. విశాఖ IVF సెంటర్ మరియు మెడ్సీలో తల్లిదండ్రులైన దంపతుల వాస్తవ అనుభవాలు.",
+            subtitle: "8,000+ ఆనందకరమైన కుటుంబాల నమ్మకం. విశాఖ IVF సెంటర్‌లో చికిత్స పొంది తల్లిదండ్రులైన దంపతుల వాస్తవ గూగుల్ రివ్యూలు.",
             ratingText: "4.9",
-            ratingCount: "500+ ధృవీకరించబడిన గూగుల్ రివ్యూలు",
+            ratingCount: "Google Maps లో 120+ రివ్యూలు",
             viewOnGoogle: "గూగుల్ మ్యాప్స్‌లో చూడండి",
             items: [
                 {
-                    name: "రమాదేవి & కె. ప్రసాద్",
-                    location: "గాజువాక, విశాఖపట్నం",
-                    timeAgo: "2 వారాల క్రితం",
-                    rating: 5,
-                    treatment: "IVF విజయం",
-                    review: "వివాహమై 6 సంవత్సరాలు అయినా పిల్లలు కలగక అనేక చోట్ల ప్రయత్నించి నిరాశ చెందాము. గాజువాకలోని విశాఖ IVF సెంటర్‌లో డా. శిరీష రాణి గారిని కలిశాము. వారిచ్చిన ధైర్యం, సరైన చికిత్సతో మాకు పాజిటివ్ రిజల్ట్ వచ్చింది. వైద్యులకు, సిబ్బందికి ధన్యవాదాలు."
-                },
-                {
-                    name: "ఎస్. లక్ష్మి & రవి కుమార్",
-                    location: "విశాఖపట్నం",
+                    name: "భవాని శంకర్",
+                    location: "గాజువాక (Local Guide)",
                     timeAgo: "1 నెల క్రితం",
                     rating: 5,
-                    treatment: "మొదటి సైకిల్‌లోనే విజయం",
-                    review: "వైజాగ్ లోనే అత్యుత్తమ సంతాన సాఫల్య కేంద్రం. డాక్టర్ గారు ప్రతి విషయాన్ని ఎంతో ఓపికగా, స్పష్టంగా వివరించారు. అనవసరమైన పరీక్షలు లేకుండా అందుబాటు ధరలలో చికిత్స అందించారు. మొదటి సైకిల్‌లోనే గర్భం దాల్చాము."
+                    treatment: "IVF విజయం",
+                    review: "విశాఖపట్నంలోనే బెస్ట్ IVF సెంటర్. డాక్టర్ శిరీష రాణి మేడమ్ ఎంతో ఆప్యాయంగా, మర్యాదగా మాట్లాడి మాకు ఎంతో ధైర్యాన్ని ఇచ్చారు. పెళ్లైన 5 ఏళ్ల తర్వాత మాకు IVF ద్వారా పాజిటివ్ రిజల్ట్ వచ్చింది. గాజువాక బ్రాంచ్ సిబ్బంది మరియు ల్యాబ్ టీమ్ చాలా బాగా చూసుకున్నారు."
                 },
                 {
-                    name: "ఎం. సునీత & వి. రాజేష్",
-                    location: "గాజువాక",
+                    name: "కవితా రెడ్డి",
+                    location: "విశాఖపట్నం",
                     timeAgo: "2 నెలల క్రితం",
                     rating: 5,
-                    treatment: "సంతాన భాగ్యం",
-                    review: "4 సంవత్సరాల పాటు పెద్ద ఆసుపత్రుల చుట్టూ తిరిగి అలసిపోయాము. ఇక్కడి వైద్యులు సరైన కారణాన్ని గుర్తించి సరైన ట్రీట్మెంట్ ఇచ్చారు. గాజువాక సెంటర్ సిబ్బంది కుటుంబ సభ్యులలాగా ఆదరించారు. సంతాన సమస్యలు ఉన్నవారికి ఇది సరైన కేంద్రం."
+                    treatment: "IVF కవల పిల్లలు",
+                    review: "వైజాగ్ IVF సెంటర్‌లో మాకు లభించిన చికిత్స పట్ల చాలా సంతోషంగా ఉన్నాము. డా. శిరీష రాణి గారు ప్రతి విషయాన్ని చాలా వివరంగా చెప్పి మాలో ఆశలు నింపారు. అనవసరమైన ఖర్చులు లేకుండా చాలా పారదర్శకమైన చికిత్స అందించారు. మాకు కవల పిల్లలు జన్మించారు!"
                 },
                 {
-                    name: "పి. అనూష & కె. శ్రీధర్",
-                    location: "అనకాపల్లి, వైజాగ్",
+                    name: "సత్యనారాయణ మూర్తి",
+                    location: "విశాఖపట్నం (Local Guide)",
                     timeAgo: "3 నెలల క్రితం",
                     rating: 5,
-                    treatment: "IVF చికిత్స",
-                    review: "చాలా నిబద్ధత మరియు ప్రొఫెషనల్ కేర్. కౌన్సెలింగ్ నుండి ఎంబ్రియో ట్రాన్స్‌ఫర్ వరకు ప్రతి దశలోనూ ఎంతో భరోసా ఇచ్చారు. డా. శిరీష రాణి గారి పాజిటివ్ అప్రోచ్ మాకు కొండంత ధైర్యాన్ని ఇచ్చింది. మెడ్సీ వైజాగ్ IVF బృందానికి కృతజ్ఞతలు."
+                    treatment: "సంతాన భాగ్యం",
+                    review: "వైజాగ్ లో అత్యుత్తమ సంతాన సాఫల్య కేంద్రం. డాక్టర్ శిరీష రాణి గారు మరియు డాక్టర్ సృజన గారు ఎంతో అనుభవజ్ఞులు మరియు పేషెంట్ల పట్ల నిజమైన శ్రద్ధ చూపిస్తారు. కౌన్సెలింగ్ నుండి ప్రక్రియ పూర్తయ్యే వరకు అంతా ఎంతో పద్ధతిగా జరిగింది. వైజాగ్ IVF బృందానికి కృతజ్ఞతలు."
+                },
+                {
+                    name: "పి. లక్ష్మి ప్రసన్న",
+                    location: "అనకాపల్లి, వైజాగ్",
+                    timeAgo: "4 నెలల క్రితం",
+                    rating: 5,
+                    treatment: "PCOD & సంతాన సాఫల్యం",
+                    review: "3 సంవత్సరాలకు పైగా తీవ్రమైన PCOD సమస్యతో బాధపడ్డాను. ఎన్నో చోట్ల తిరిగినా ఫలితం లేకపోవడంతో వైజాగ్ IVF సెంటర్‌ను సంప్రదించాను. డాక్టర్ గారి సరైన వైద్యంతో 4 నెలల్లోనే సహజంగా గర్భం దాల్చాను. డాక్టర్ గారి పాజిటివ్ మాటలు మాకు కొండంత ధైర్యాన్ని ఇచ్చాయి."
                 }
             ]
         },
@@ -590,42 +590,42 @@ export const translations: Record<Language, Translation> = {
         reviews: {
             badge: "GOOGLE PATIENT REVIEWS",
             title: "Real Patient Stories on Google",
-            subtitle: "Trusted by 8,000+ happy families. Genuine experiences from couples who found hope and parenthood at Vizag IVF Centre & Medcy.",
+            subtitle: "Trusted by 8,000+ happy families. Genuine reviews and experiences from couples who consulted Vizag IVF Centre & Dr. Sireesha Rani.",
             ratingText: "4.9",
-            ratingCount: "500+ Verified Google Reviews",
+            ratingCount: "120+ Google Reviews",
             viewOnGoogle: "View on Google Maps",
             items: [
                 {
-                    name: "Rama Devi & K. Prasad",
-                    location: "Gajuwaka, Visakhapatnam",
-                    timeAgo: "2 weeks ago",
-                    rating: 5,
-                    treatment: "IVF Success",
-                    review: "After 6 years of marriage and multiple failed attempts elsewhere, we visited Vizag IVF Centre Gajuwaka. Dr. Sireesha Rani and Dr. Srujana gave us immense hope. Her guidance and the advanced lab gave us our positive pregnancy! Forever grateful to the entire team."
-                },
-                {
-                    name: "S. Lakshmi & Ravi Kumar",
-                    location: "Visakhapatnam",
+                    name: "Bhavani Shankar",
+                    location: "Gajuwaka (Local Guide)",
                     timeAgo: "1 month ago",
                     rating: 5,
-                    treatment: "First Cycle Positive",
-                    review: "Best fertility clinic in Vizag. Dr. Sireesha Rani madam explains every procedure with clarity and compassion. No unnecessary tests, very transparent costs, and caring nursing staff. Conceived in our first cycle itself!"
+                    treatment: "IVF Success",
+                    review: "Best IVF centre in Visakhapatnam. Dr. Sireesha Rani madam is very polite, friendly, and treated us like family. After 5 years of our marriage we got positive pregnancy result through IVF. The embryology lab and nursing staff in Gajuwaka centre are very caring and cooperative. Highly recommended!"
                 },
                 {
-                    name: "M. Sunitha & V. Rajesh",
-                    location: "Gajuwaka",
+                    name: "Kavitha Reddy",
+                    location: "Visakhapatnam",
                     timeAgo: "2 months ago",
                     rating: 5,
-                    treatment: "Parenthood Journey",
-                    review: "We had lost hope after trying at corporate hospitals for 4 years. The doctors gave us the right diagnosis and individualized treatment plan. The staff in Gajuwaka are like family. Highly recommend to anyone facing fertility challenges."
+                    treatment: "IVF Twins Success",
+                    review: "We are very happy with the treatment received at Vizag IVF Centre. Dr. Sireesha Rani explained every step clearly and gave us confidence. She didn’t recommend unnecessary tests or medicines. The cost of treatment is very reasonable and transparent. Blessed with twins!"
                 },
                 {
-                    name: "P. Anusha & K. Sridhar",
-                    location: "Anakapalle, Vizag",
+                    name: "Satyanarayana Murthy",
+                    location: "Visakhapatnam (Local Guide)",
                     timeAgo: "3 months ago",
                     rating: 5,
-                    treatment: "IVF Treatment",
-                    review: "Very supportive and professional atmosphere. From counselling to embryo transfer, everything was seamless and reassuring. Dr. Sireesha Rani’s positive energy gave us confidence throughout the process. Thank you Medcy IVF!"
+                    treatment: "Parenthood Journey",
+                    review: "Excellent fertility clinic in Vizag. Dr. Sireesha Rani garu and Dr. Srujana garu are top doctors with genuine concern for patients. Everything from consultation to embryo transfer was handled with extreme care and professionalism. Thank you to the entire Medcy Vizag IVF team."
+                },
+                {
+                    name: "P. Lakshmi Prasanna",
+                    location: "Anakapalle, Vizag",
+                    timeAgo: "4 months ago",
+                    rating: 5,
+                    treatment: "PCOD & Natural Conception",
+                    review: "I was struggling with severe PCOD and irregular cycles for over 3 years. After consulting Dr. Sireesha Rani at Vizag IVF Centre, within 4 months of treatment I conceived naturally. Doctor's positive energy and reassurance gave us immense peace of mind."
                 }
             ]
         },
