@@ -24,60 +24,50 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ t, onDoctorClick
         </div>
 
         {/* Doctor Cards */}
-        <div className={`w-full mx-auto ${t.doctors.list.length === 1 ? 'max-w-3xl' : 'grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10'}`}>
+        <div className={`w-full mx-auto ${t.doctors.list.length === 1 ? 'max-w-3xl' : 'grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 lg:gap-8'}`}>
           {t.doctors.list.map((doctor) => (
             <div
               key={doctor.id}
-              className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-8 border border-[#652D6C]/15 shadow-xl shadow-purple-950/5 relative overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:shadow-2xl hover:border-[#652D6C]/25"
+              className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-7 border border-[#652D6C]/15 shadow-xl shadow-purple-950/5 relative overflow-hidden flex flex-col justify-between group transition-all duration-300 hover:shadow-2xl hover:border-[#652D6C]/25"
             >
               
               {/* Main Card Content */}
-              <div className="flex flex-col sm:flex-row gap-5 sm:gap-7 items-center sm:items-start text-center sm:text-left">
+              <div className="flex flex-col sm:flex-row gap-5 sm:gap-6 items-center sm:items-start text-center sm:text-left">
                 
                 {/* Left Side: Avatar Box & Name Badge Pill */}
                 <div className="flex flex-col items-center shrink-0 w-full sm:w-auto">
-                  <div className="w-32 h-32 sm:w-44 sm:h-44 rounded-2xl p-[3px] bg-gradient-to-tr from-[#652D6C] via-[#8E3294] to-[#4D1F53] shadow-md overflow-hidden">
+                  <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl p-[3px] bg-gradient-to-tr from-[#652D6C] via-[#8E3294] to-[#4D1F53] shadow-md overflow-hidden">
                     <img
                       src={doctor.photo}
                       alt={doctor.name}
                       className="w-full h-full object-cover object-top rounded-xl bg-white"
-                      onError={(e) => {
-                        (e.target as HTMLElement).setAttribute('src', '/dr-srujana.jpg');
-                      }}
                     />
                   </div>
 
                   {/* Dark Purple Name Badge Pill Under Photo */}
-                  <div className="mt-2.5 sm:mt-3.5 bg-[#602568] text-white px-4 sm:px-5 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-extrabold shadow-sm tracking-wide text-center w-full max-w-[180px]">
+                  <div className="mt-2.5 sm:mt-3 bg-[#602568] text-white px-3.5 sm:px-4 py-1 sm:py-1.5 rounded-full text-xs sm:text-sm font-extrabold shadow-sm tracking-wide text-center w-full max-w-[170px]">
                     {doctor.name}
                   </div>
                 </div>
 
                 {/* Right Side: Details & Qualifications */}
-                <div className="space-y-3 sm:space-y-3.5 flex-1 w-full pt-1 sm:pt-0">
+                <div className="space-y-2.5 sm:space-y-3 flex-1 w-full pt-1 sm:pt-0">
                   
-                  {/* Doctor Name & Experience Badge */}
-                  <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-2 sm:gap-3">
-                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#2A102D] tracking-tight">
-                      {doctor.name}
-                    </h3>
-                    {doctor.expBadge && (
-                      <span className="inline-block px-3 py-0.5 sm:px-3.5 sm:py-1 rounded-full bg-[#FAF3FB] border border-[#652D6C]/20 text-[#652D6C] text-[11px] sm:text-xs font-black uppercase tracking-wider shadow-sm shrink-0">
-                        {doctor.expBadge}
-                      </span>
-                    )}
-                  </div>
+                  {/* Doctor Name */}
+                  <h3 className="text-xl sm:text-2xl font-extrabold text-[#2A102D] tracking-tight">
+                    {doctor.name}
+                  </h3>
 
                   {/* Title / Designation */}
-                  <p className="text-xs sm:text-sm lg:text-base font-bold text-[#652D6C]">
+                  <p className="text-xs sm:text-sm font-bold text-[#652D6C]">
                     {doctor.title}
                   </p>
 
                   {/* Qualifications Pill Box */}
                   {doctor.qualifications && (
-                    <div className="p-2.5 sm:p-3.5 rounded-xl sm:rounded-2xl bg-[#FAF3FB] border border-[#652D6C]/15 flex items-center justify-center sm:justify-start gap-2.5 sm:gap-3 text-left">
-                      <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5 text-[#8E3294] shrink-0" />
-                      <p className="text-[11px] sm:text-sm font-bold text-[#2A102D] leading-snug">
+                    <div className="p-2.5 sm:p-3 rounded-xl sm:rounded-2xl bg-[#FAF3FB] border border-[#652D6C]/15 flex items-center justify-center sm:justify-start gap-2 sm:gap-2.5 text-left">
+                      <GraduationCap className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#8E3294] shrink-0" />
+                      <p className="text-[11px] sm:text-xs font-bold text-[#2A102D] leading-snug">
                         {doctor.qualifications}
                       </p>
                     </div>
@@ -92,13 +82,20 @@ export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ t, onDoctorClick
 
               </div>
 
-              {/* Bottom Achievement Ribbon Badge */}
-              {doctor.achievementBadge && (
-                <div className="mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-[#652D6C]/10 flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-extrabold text-[#652D6C]">
-                  <Ribbon className="w-4 h-4 text-[#8E3294] shrink-0" />
-                  <span>{doctor.achievementBadge}</span>
-                </div>
-              )}
+              {/* Bottom Achievement Ribbon Badge & Experience Badge */}
+              <div className="mt-5 sm:mt-6 pt-4 border-t border-[#652D6C]/10 flex items-center justify-between gap-2 flex-wrap">
+                {doctor.achievementBadge && (
+                  <div className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm font-extrabold text-[#652D6C]">
+                    <Ribbon className="w-4 h-4 text-[#8E3294] shrink-0" />
+                    <span>{doctor.achievementBadge}</span>
+                  </div>
+                )}
+                {doctor.expBadge && (
+                  <span className="inline-block px-3 py-0.5 sm:px-3 sm:py-1 rounded-full bg-[#FAF3FB] border border-[#652D6C]/20 text-[#652D6C] text-[11px] sm:text-xs font-black uppercase tracking-wider shadow-xs">
+                    {doctor.expBadge}
+                  </span>
+                )}
+              </div>
 
             </div>
           ))}

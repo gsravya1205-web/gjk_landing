@@ -93,6 +93,22 @@ export interface Translation {
             achievementBadge: string;
         }[];
     };
+    reviews: {
+        badge: string;
+        title: string;
+        subtitle: string;
+        ratingText: string;
+        ratingCount: string;
+        viewOnGoogle: string;
+        items: {
+            name: string;
+            location: string;
+            timeAgo: string;
+            rating: number;
+            treatment: string;
+            review: string;
+        }[];
+    };
     whyChoose: {
         title: string;
         items: {
@@ -163,18 +179,18 @@ export const translations: Record<Language, Translation> = {
         },
         hero: {
             badge: "",
-            brandTag: "MEDCY IVF",
+            brandTag: "VIZAG IVF",
             headlinePart1: "8,000+ కుటుంబాలు మాతో ఎదిగాయి.",
             headlineHighlight: "మీ కుటుంబం కూడా!",
             headlinePart2: "",
             tagline: "అత్యుత్తమ ఫెర్టిలిటీ సంరక్షణ. తల్లిదండ్రులు కావాలనే మీ ప్రయాణం ఇక్కడే మొదలవుతుంది.",
             subtext: "రుజువైన విజయవంతమైన రేట్లు, అగ్రశ్రేణి సంతానలేమి నిపుణులు మరియు అందుబాటు ధరల సంపూర్ణ చికిత్సా ప్రణాళికల కోసం మెడ్సీని ఎంచుకోండి. ఎటువంటి దాగి ఉన్న రుసుములు లేదా రిజిస్ట్రేషన్ ఛార్జీలు లేవు — మీరు తల్లిదండ్రులు కావడానికి తోడ్పడే నిజమైన నిపుణుల సంరక్షణ మాత్రమే.",
             locationBadge: "గాజువాక, విశాఖపట్నం",
-            offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
-            offerText: "IVF చికిత్స కేవలం ₹1.8 లక్షలకే!",
-            offerOriginalPrice: "సాధారణ మార్కెట్ ధర: ₹1.9 లక్షలు",
-            offerSaveTag: "రూ. 10,000 వర్సెస్ ₹1.9L తక్షణ ఆదా!",
-            offerNote: "గమనిక: బయట క్లినిక్‌లలో రూ. 1.9L ఉండే ప్యాకేజీని మెడ్సీ IVF ప్రత్యేక డిస్కౌంట్ ఆఫర్‌తో రూ. 1.8L కే అందిస్తోంది.",
+            offerBadge: "",
+            offerText: "IVF ప్యాకేజీలు 1.8* లక్షల నుండి ప్రారంభం",
+            offerOriginalPrice: "",
+            offerSaveTag: "",
+            offerNote: "*తుది మొత్తం రోగిని బట్టి మారవచ్చు",
             srikakulamOffer: "శ్రీకాకుళం బ్రాంచ్‌లో సంపూర్ణ IVF చికిత్స కేవలం ₹1.5 లక్షలకే!",
             keyPoints: [
                 "ఉచిత నిపుణుల సంప్రదింపులు",
@@ -294,6 +310,48 @@ export const translations: Record<Language, Translation> = {
                 }
             ]
         },
+        reviews: {
+            badge: "గూగుల్ పేషెంట్ రివ్యూలు",
+            title: "గూగుల్‌లో మా పేషెంట్ల నిజమైన అనుభవాలు",
+            subtitle: "8,000+ ఆనందకరమైన కుటుంబాల నమ్మకం. విశాఖ IVF సెంటర్ మరియు మెడ్సీలో తల్లిదండ్రులైన దంపతుల వాస్తవ అనుభవాలు.",
+            ratingText: "4.9",
+            ratingCount: "500+ ధృవీకరించబడిన గూగుల్ రివ్యూలు",
+            viewOnGoogle: "గూగుల్ మ్యాప్స్‌లో చూడండి",
+            items: [
+                {
+                    name: "రమాదేవి & కె. ప్రసాద్",
+                    location: "గాజువాక, విశాఖపట్నం",
+                    timeAgo: "2 వారాల క్రితం",
+                    rating: 5,
+                    treatment: "IVF విజయం",
+                    review: "వివాహమై 6 సంవత్సరాలు అయినా పిల్లలు కలగక అనేక చోట్ల ప్రయత్నించి నిరాశ చెందాము. గాజువాకలోని విశాఖ IVF సెంటర్‌లో డా. శిరీష రాణి గారిని కలిశాము. వారిచ్చిన ధైర్యం, సరైన చికిత్సతో మాకు పాజిటివ్ రిజల్ట్ వచ్చింది. వైద్యులకు, సిబ్బందికి ధన్యవాదాలు."
+                },
+                {
+                    name: "ఎస్. లక్ష్మి & రవి కుమార్",
+                    location: "విశాఖపట్నం",
+                    timeAgo: "1 నెల క్రితం",
+                    rating: 5,
+                    treatment: "మొదటి సైకిల్‌లోనే విజయం",
+                    review: "వైజాగ్ లోనే అత్యుత్తమ సంతాన సాఫల్య కేంద్రం. డాక్టర్ గారు ప్రతి విషయాన్ని ఎంతో ఓపికగా, స్పష్టంగా వివరించారు. అనవసరమైన పరీక్షలు లేకుండా అందుబాటు ధరలలో చికిత్స అందించారు. మొదటి సైకిల్‌లోనే గర్భం దాల్చాము."
+                },
+                {
+                    name: "ఎం. సునీత & వి. రాజేష్",
+                    location: "గాజువాక",
+                    timeAgo: "2 నెలల క్రితం",
+                    rating: 5,
+                    treatment: "సంతాన భాగ్యం",
+                    review: "4 సంవత్సరాల పాటు పెద్ద ఆసుపత్రుల చుట్టూ తిరిగి అలసిపోయాము. ఇక్కడి వైద్యులు సరైన కారణాన్ని గుర్తించి సరైన ట్రీట్మెంట్ ఇచ్చారు. గాజువాక సెంటర్ సిబ్బంది కుటుంబ సభ్యులలాగా ఆదరించారు. సంతాన సమస్యలు ఉన్నవారికి ఇది సరైన కేంద్రం."
+                },
+                {
+                    name: "పి. అనూష & కె. శ్రీధర్",
+                    location: "అనకాపల్లి, వైజాగ్",
+                    timeAgo: "3 నెలల క్రితం",
+                    rating: 5,
+                    treatment: "IVF చికిత్స",
+                    review: "చాలా నిబద్ధత మరియు ప్రొఫెషనల్ కేర్. కౌన్సెలింగ్ నుండి ఎంబ్రియో ట్రాన్స్‌ఫర్ వరకు ప్రతి దశలోనూ ఎంతో భరోసా ఇచ్చారు. డా. శిరీష రాణి గారి పాజిటివ్ అప్రోచ్ మాకు కొండంత ధైర్యాన్ని ఇచ్చింది. మెడ్సీ వైజాగ్ IVF బృందానికి కృతజ్ఞతలు."
+                }
+            ]
+        },
         whyChoose: {
             title: "మా ప్రత్యేకతలు",
             items: [
@@ -398,18 +456,18 @@ export const translations: Record<Language, Translation> = {
         },
         hero: {
             badge: "",
-            brandTag: "MEDCY IVF",
+            brandTag: "VIZAG IVF",
             headlinePart1: "8,000+ Families Grew With Us.",
             headlineHighlight: "Yours Can Too.",
             headlinePart2: "",
             tagline: "Expert fertility care. Your journey to parenthood starts here.",
             subtext: "Choose Medcy for proven success rates, top-tier fertility specialists, and highly affordable, all-inclusive treatment plans. No hidden fees, no registration charges—just genuine, expert care to help you become parents.",
             locationBadge: "Gajuwaka, Visakhapatnam",
-            offerBadge: "SPECIAL DISCOUNT PACKAGE OFFER",
-            offerText: "IVF TREATMENT AT ₹1.8 LAKHS ONLY",
-            offerOriginalPrice: "Standard Market Price: ₹1.9 Lakhs",
-            offerSaveTag: "SAVE ₹10,000 VS REGULAR ₹1.9L!",
-            offerNote: "Note: Standard market clinics charge ₹1.9 Lakhs — Medcy IVF provides complete treatment package at ₹1.8 Lakhs.",
+            offerBadge: "",
+            offerText: "IVF Packages starting from 1.8* lakhs onwards",
+            offerOriginalPrice: "",
+            offerSaveTag: "",
+            offerNote: "*final amount may vary from patient to patient",
             srikakulamOffer: "In Srikakulam Branch, Complete IVF Treatment at ₹1.5 Lakhs Only",
             keyPoints: [
                 "Free Expert Consultation",
@@ -526,6 +584,48 @@ export const translations: Record<Language, Translation> = {
                     photo: "/dr-mounica.jpg",
                     bio: "Infertility specialist providing personalized care in IVF, IUI, ICSI, and reproductive medicine, with a focus on individualized fertility treatment and women's reproductive health.",
                     achievementBadge: ""
+                }
+            ]
+        },
+        reviews: {
+            badge: "GOOGLE PATIENT REVIEWS",
+            title: "Real Patient Stories on Google",
+            subtitle: "Trusted by 8,000+ happy families. Genuine experiences from couples who found hope and parenthood at Vizag IVF Centre & Medcy.",
+            ratingText: "4.9",
+            ratingCount: "500+ Verified Google Reviews",
+            viewOnGoogle: "View on Google Maps",
+            items: [
+                {
+                    name: "Rama Devi & K. Prasad",
+                    location: "Gajuwaka, Visakhapatnam",
+                    timeAgo: "2 weeks ago",
+                    rating: 5,
+                    treatment: "IVF Success",
+                    review: "After 6 years of marriage and multiple failed attempts elsewhere, we visited Vizag IVF Centre Gajuwaka. Dr. Sireesha Rani and Dr. Srujana gave us immense hope. Her guidance and the advanced lab gave us our positive pregnancy! Forever grateful to the entire team."
+                },
+                {
+                    name: "S. Lakshmi & Ravi Kumar",
+                    location: "Visakhapatnam",
+                    timeAgo: "1 month ago",
+                    rating: 5,
+                    treatment: "First Cycle Positive",
+                    review: "Best fertility clinic in Vizag. Dr. Sireesha Rani madam explains every procedure with clarity and compassion. No unnecessary tests, very transparent costs, and caring nursing staff. Conceived in our first cycle itself!"
+                },
+                {
+                    name: "M. Sunitha & V. Rajesh",
+                    location: "Gajuwaka",
+                    timeAgo: "2 months ago",
+                    rating: 5,
+                    treatment: "Parenthood Journey",
+                    review: "We had lost hope after trying at corporate hospitals for 4 years. The doctors gave us the right diagnosis and individualized treatment plan. The staff in Gajuwaka are like family. Highly recommend to anyone facing fertility challenges."
+                },
+                {
+                    name: "P. Anusha & K. Sridhar",
+                    location: "Anakapalle, Vizag",
+                    timeAgo: "3 months ago",
+                    rating: 5,
+                    treatment: "IVF Treatment",
+                    review: "Very supportive and professional atmosphere. From counselling to embryo transfer, everything was seamless and reassuring. Dr. Sireesha Rani’s positive energy gave us confidence throughout the process. Thank you Medcy IVF!"
                 }
             ]
         },

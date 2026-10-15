@@ -75,36 +75,43 @@ export const Hero: React.FC<HeroProps> = ({ t, onFormSubmit }) => {
             </p>
 
 
-            {/* Special Discount Offer Card comparing 1.9L vs 1.8L */}
-            <div className="text-white shadow-xl relative overflow-hidden border border-yellow-300/40 bg-gradient-to-r from-[#4A164E] via-[#652D6C] to-[#8F2D95] px-5 py-4 sm:px-6 sm:py-5 rounded-2xl">
-              <div className="relative z-10 space-y-2">
-                {/* Badges Bar */}
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-[11px] font-extrabold uppercase tracking-wider bg-yellow-400 text-[#4D1F53] px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1">
-                    <Award className="w-3.5 h-3.5 text-[#4D1F53]" />
-                    <span>{t.hero.offerBadge}</span>
-                  </span>
-
-                  <span className="text-[11px] font-extrabold uppercase tracking-wider bg-emerald-500 text-white px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1 animate-pulse">
-                    <Tag className="w-3.5 h-3.5" />
-                    <span>{t.hero.offerSaveTag}</span>
-                  </span>
-                </div>
-
-                {/* Price Comparison */}
-                <div className="pt-0.5">
-                  <div className="flex items-baseline gap-2.5 flex-wrap">
-                    <span className="text-xs sm:text-sm text-purple-200/80 line-through font-bold">
-                      {t.hero.offerOriginalPrice}
+            {/* IVF Packages Offer Card */}
+            <div className="text-white shadow-xl relative overflow-hidden border border-yellow-300/30 bg-gradient-to-r from-[#4A164E] via-[#652D6C] to-[#8F2D95] px-5 py-4 sm:px-6 sm:py-4.5 rounded-2xl">
+              <div className="relative z-10 space-y-1.5">
+                {t.hero.offerBadge ? (
+                  <div className="flex flex-wrap items-center gap-2 mb-1.5">
+                    <span className="text-[11px] font-extrabold uppercase tracking-wider bg-yellow-400 text-[#4D1F53] px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1">
+                      <Award className="w-3.5 h-3.5 text-[#4D1F53]" />
+                      <span>{t.hero.offerBadge}</span>
                     </span>
-                    <h3 className="text-lg sm:text-xl lg:text-2xl font-extrabold text-yellow-300 tracking-tight">
+
+                    {t.hero.offerSaveTag && (
+                      <span className="text-[11px] font-extrabold uppercase tracking-wider bg-emerald-500 text-white px-3 py-0.5 rounded-full shadow-sm flex items-center gap-1">
+                        <Tag className="w-3.5 h-3.5" />
+                        <span>{t.hero.offerSaveTag}</span>
+                      </span>
+                    )}
+                  </div>
+                ) : null}
+
+                {/* Price Information */}
+                <div>
+                  <div className="flex items-baseline gap-2.5 flex-wrap">
+                    {t.hero.offerOriginalPrice && (
+                      <span className="text-xs sm:text-sm text-purple-200/80 line-through font-bold">
+                        {t.hero.offerOriginalPrice}
+                      </span>
+                    )}
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-extrabold text-yellow-300 tracking-tight leading-snug">
                       {t.hero.offerText}
                     </h3>
                   </div>
 
-                  <p className="text-xs text-purple-100 font-medium mt-0.5">
-                    {t.hero.offerNote}
-                  </p>
+                  {t.hero.offerNote && (
+                    <p className="text-xs sm:text-sm text-purple-100/90 font-medium mt-1">
+                      {t.hero.offerNote}
+                    </p>
+                  )}
                 </div>
               </div>
             </div>
