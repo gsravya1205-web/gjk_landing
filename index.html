@@ -12,6 +12,7 @@
     </script>
 
     <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="googleedee359ec83b537d" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medcy IVF & Hospitals | Free Fertility Camp Vizag - మెడ్సీ IVF & హాస్పిటల్స్</title>
@@ -21,28 +22,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script>
-      window.addEventListener('load', function() {
-        // Track Page Visit
-        fetch('https://adinsights.medcytech.com/api/track-click', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ elementClicked: 'Page Visit: Consultation Medcy IVF' }),
-        }).catch(err => console.error(err));
-    
-        // Track Link Clicks
-        document.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', function() {
-            const linkText = this.innerText.trim() || 'Icon/Image Link';
-            fetch('https://adinsights.medcytech.com/api/track-click', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ elementClicked: `[Consultation Medcy IVF] Clicked: ${linkText}` }),
-            }).catch(err => console.error(err));
-          });
-        });
-      });
-    </script>
   </head>
   <body class="bg-[#FAF6FA] text-[#2A102D] antialiased selection:bg-[#652D6C] selection:text-white">
     <div id="root"></div>
